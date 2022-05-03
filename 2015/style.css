@@ -1,0 +1,290 @@
+body{
+
+  background-color:black;
+}
+
+.light-mode{
+   background-color:white;
+   color:black;
+}
+
+.navbar{
+  width:200%;
+  height:50px;
+  background-color:orange;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:5;
+}
+
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+ 
+  padding:0 50px;
+
+
+}
+
+
+.menu-container{
+  flex:6;
+}
+
+
+.menu-list{
+  display:flex;
+  list-style:none;
+}
+
+
+.menu-list-item{
+  margin-right:50px;
+  padding: 0;
+  overflow: hidden;
+  background-color:balck;
+
+}
+
+ li {
+    
+    float:right;
+    line-height: 15px;
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+  
+  li a:hover {
+    background-color: pink;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+ 
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(139, 139, 139);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: black;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+h1 {
+  color :orange;
+  font-size:500%;
+  text-shadow:2px 2px 5px red;
+  padding:20px;
+  text-align:center;
+}
+
+.bg-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+}
+
+.bg-text{
+  font-weight: bold;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:3;
+  text-align: center;
+  margin-top: 200px;
+  width:40%;
+  padding:20px;
+  text-shadow:2px 2px 5px red
+} 
+
+
+p{
+  color:#c40000;
+  text-transform:capitalize;
+  font-size:30px;
+  word-spacing:7px;
+  font-family:georgia;
+}
+
+.header{
+  text-transform:capitalize;
+  text-align:left;
+  border-left:6px solid #ffc987;
+}
+
+
+.semi{
+   color:#c40000;
+   background-color:lightgray;
+   font-size:40px;
+   text-transform:capitalize;
+   }
+.flip-card {
+  background-color: orange;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left:600px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+
+.flip-card-front {
+  background-color:orange;
+  color: black;
+  transform: rotateY(180deg);
+
+}
+
+
+.flip-card-back {
+  background-color:#ffc987;
+  color: black;
+}
+
+
+.box{
+  background-color: lightgrey;
+  width: 500px;
+  border: 15px solid #c40000;
+  padding: 50px;
+  margin: 20px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  word-spacing:5px; 
+}
+
+
+.about{
+color:#ffc987;
+font-size:30px;
+text-transform:capitalize;
+background:darkred;
+margin-right:50%;
+padding:20px;
+}
+
+.mark{
+ margin-left:5px;
+ color:white;
+}
+
+
+.actpic{
+  display:inline-block;
+}
+
+.actpic img{
+border-radius:50%;
+}
+
+
+.actors{
+  color:#c40000;
+  background-color:#ffc987;
+  text-transform:capitalize;
+  font-family:fantasy;
+  margin-right:auto;
+  text-align:center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  display:inline-block;
+  vertical-align:top;
+  margin-right:20px;
+  margin-left:80px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #ffc987;
+  transform:scale(1.1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:#c40000;
+  font-size:20px;
+  font-family:georgia;
+  
+}
+
+
