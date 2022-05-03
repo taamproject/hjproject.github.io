@@ -1,0 +1,78 @@
+<!DOCtype html>
+<html>
+<head>moreaboutmovie
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css"></head>
+ <title>2016</title>
+
+ <style>
+  body{ background-color:#99473D;}
+  .h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px black,
+               2px 2px 1px black;
+  text-align: center;
+}
+
+h1+ p {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+</style>
+
+<body>
+<div class="slides slowFade">
+        <div class="slide">
+            <img src="spotlight.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="spotlight2.jpeg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="spotlight3.jpg" alt="img"/>
+        </div>
+		<div class="slide">
+            <img src="spotlight4.jpg" alt="img"/>
+			
+        </div>
+		</div>
+		 <h1 class="h1">About the movie </h1>
+  <p>In 2001, editor Marty Baron of The Boston Globe assigns 
+  a team of journalists to investigate allegations against John Geoghan
+  <span id="dots">...</span><span id="more">, an unfrocked priest accused of molesting more than 80 boys.
+  Led by editor Walter 
+  "Robby" Robinson (Michael Keaton), reporters Michael Rezendes (Mark Ruffalo)
+  , Matt Carroll and Sacha Pfeiffer interview victims 
+  and try to unseal sensitive documents. 
+  The reporters make it their mission to provide proof of a cover-up of sexual abuse within the Roman Catholic Church..</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+  
+  
+  
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  
+		</body>
+		</html>
