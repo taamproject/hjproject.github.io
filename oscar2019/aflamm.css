@@ -184,14 +184,15 @@ ul{
 	position:relative;
 	
 }
-.footer-col h4::before{
-	position:absolute;
-	left:0;
-	bottom:-10px;
+
+hr{
 	background-color:rgb(206, 135, 48);
-	height:2px;
-	box-sizing:border-box;
+	margin-top:0;
 	width:50px;
+	margin-left:20px;
+	margin-bottom:10px;
+	border-color:rgb(206, 135, 48);
+	
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom:10px;
